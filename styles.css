@@ -1,0 +1,154 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5ddef;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ba4790;
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #e0f7fa;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+main section {
+    margin-bottom: 80px;
+}
+
+main section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#about {
+    text-align: center;
+}
+
+#about p {
+    color: #555;
+    line-height: 1.7;
+}
+
+#projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+#projects .project-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+#projects .project-card:hover {
+    transform: translateY(-5px);
+}
+
+#projects .project-card h3 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+#projects .project-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+#projects .project-card a {
+    color: #bf44b0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#projects .project-card a:hover {
+    color: #ff00e1;
+}
+
+#contact p{
+    text-align: center;
+}
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    max-width: 300px;
+}
+
+#contact ul li {
+    margin-bottom: 15px;
+}
+
+#contact ul li a {
+    color: #7d3471;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+#contact ul li a:hover {
+    color: #ff01b3;
+}
+
+footer {
+    background-color: #ba4790;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 80px;
+    font-size: larger;
+}
+

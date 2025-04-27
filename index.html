@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm SEMMACHE KHADIDJA, a passionate student with a love for creating things,I have experience in programming, This portfolio showcases some of my work and projects.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2> <a href="index.html">My Projects</a></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <h4>Workshop</h4>
+                    <p>A brief description of project 1. Workshop registration form:name,email,phone,organization,session date</p>
+                    <a href="index1.html">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                   <h4>OranAnimated</h4>                
+                    <p>A brief description of project 2. An animated Oran picture highlights the city's landmarks with dynamic elements </p>
+                    <a href="index2.html">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                     <h4>Model Box</h4> 
+                    <p>A brief description of project 3. The box model defines an element's structure with content,padding,border and margin</p>
+                    <a href="index3.html">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 4</h3>
+                    <h4>CatsGallery</h4> 
+                    <p>A brief description of project 4. A Cutest Cat gallery</p>
+                    <a href="index4.html">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 5</h3>
+                    <h4>Calculator</h4> 
+                    <p>A brief description of project 5. A simple yet fun Calculator</p>
+                    <a href="index5.html">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 6</h3>
+                    <h4>Portfolio</h4> 
+                    <p>A portfolio with 6 projects highlights diverse skills and creativity</p>
+                    <a href="index.html">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>
+                Feel free to reach out to me via email or connect with me on social media.
+            </p>
+            <ul>
+                <li>Email: <a href="mailto:your.email@example.com">semmachekhadidja06@gmail.com</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Made By Semmache Khadidja </p>
+    </footer>
+
+    <script>
+       
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
